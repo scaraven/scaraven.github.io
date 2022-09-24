@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: scaraven
+title: scaraven's blog
 
 # Your name to show in the footer
 author: scaraven
@@ -20,7 +20,7 @@ author: scaraven
 ###############################################
 
 navbar-links:
-    About Me: "aboutme"
+  About Me: "aboutme"
 
 ################
 # --- Logo --- #
@@ -28,14 +28,14 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-  avatar: "/assets/img/glasses_cat.png"
+#  avatar: "/assets/img/glasses_cat.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: "/assets/img/glasses_cat.png"
+title-img: "/assets/img/glasses_cat.png"
 
 
 #####################################
@@ -65,7 +65,7 @@ social-network-links:
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
 #  google-scholar: your google scholar
-  discord: scaraven/5053
+#  discord: scaraven#5053
 #  kaggle: yourname
 #  hackerrank: yourname
 
@@ -86,7 +86,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "scaraven.github.io"
+  url-pretty: "scaraven.github.io"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
