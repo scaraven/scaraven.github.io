@@ -16,7 +16,7 @@ After ~6 months of grinding and learning on code4rena, I still consider myself f
 
 When auditing and submitting an issue, context matters. This is advice that I have already seen being repeated by other wardens, but it is always worth to read the full project documentation. Not only does it allow you to better understand how the code works, but when you come across an issue, the severity of that issue can wildly vary based on the specific project and context.
 
-I have noticed that the issues which pay **really** well are issues which take context into account, like [this issue by WatchPug](https://code4rena.com/reports/2022-04-jpegd#h-09-bad-debts-should-not-continue-to-accrue-interest). Issues such as using `transferFrom` instead of `safeTransferFrom` are almost always valid irrespective of context but are therefore much easier to spot, thereby paying less.
+I have noticed that the issues which pay **really** well are issues which take context into account, like [this issue by WatchPug](https://code4rena.com/reports/2022-04-jpegd#h-09-bad-debts-should-not-continue-to-accrue-interest). Issues where sponsors use `transferFrom` instead of `safeTransferFrom` are almost always valid irrespective of context but are therefore much easier to spot, thereby paying less.
 
 Admittedly, I have had this issue in the past with the ENS contest, where I did not understand the full architecture of the program. Therefore, a large portion of my issues were invalidated due to incorrectly assessed impact.
 ## 2. Dream Big Or Go Home
@@ -52,6 +52,7 @@ As of time of writing, the backstage role is a role on the c4rena discord which 
 
 ## 6. `Out of scope != Do not read`
 Many contests either a. define out of scope contracts or b. make external calls to other protocols. It can be a huge mistake to ignore any external contracts not included in the competition scope. This is because it is common in integrations for two separate contracts to have no vulnerabilities but when they interact together, an issue arises due to the caller and callee having different expectations of how actions should be processed.
+
 
 A nice example is [this report from the mimo competition](https://github.com/code-423n4/2022-04-mimo-findings/issues/123). A contract in the mimo protocol would take flash loans and always assume that all flash loans it receives were initiated by itself. However, Aave allowed an arbitrary user to call a flash loan and send it to a `receiver`. This means that the mimo contract's assumptions were subverted (as it received a flash loan from Aave which was not initiated by itself) and an attacker could wreak a lot of havoc.
 # Outro
