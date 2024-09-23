@@ -10,10 +10,10 @@
 ############################
 
 # Name of website
-title: scaraven's blog
+title: Nicolas Schleicher's blog
 
 # Your name to show in the footer
-author: scaraven
+author: Nicolas Schleicher
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -45,7 +45,7 @@ title-img: "/assets/img/glasses_cat.png"
 # Select the social network links that you want to show in the footer.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "sc4raven@gmail.com"
+  email: "nschleicher37@gmail.com"
   github: scaraven
   twitter: scaraven1
 #  medium: yourname
