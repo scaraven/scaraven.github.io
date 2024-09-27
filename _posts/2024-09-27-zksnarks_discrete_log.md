@@ -43,6 +43,9 @@ Therefore, in comparison, it is much easier to calculate an exponent then a disc
 ## How do I know the Discrete Logarithm stays secure?
 There is no proof that the Discrete Logarithm problem is difficult, we only say it is difficult because we have not found an algorithm which has a time complexity of $$\mathcal{O}(\log n)$$. It is entirely possible that someone will figure out a very efficient method of calculating the discete logarithm and break much of modern cryptography. However, that day has not come quite yet, and people are willing to bet that the Discrete Logarithm problem will stay "difficult" enough to be used in cryptography (in the pre-quantum era).
 
+## Why do I care about the problem?
+Some readers may be familiar with the idea of a "private key" and a "public key" in cryptography. The public key is shared by a user while the private key is kept privately and is used to either encrypt or sign messages. A common way of building a public and private key is by generating a number $$x \in \mathbb{Z}_{+}$$ and given a public number $$a \in \mathbb{F}_p$$, calculate $$b = a^x$$. $$x$$ is the private key while $$b$$ is your public key. A lot of clever maths can be used to verify that a message verifier must own the private key however due to the Discrete Logarithm problem, it is infeasible to calculate $$x$$ given just $$a$$ and $$b$$.
+
 ## Next Time
 In my next blog, I will take a first look at a class of zero knowledge proof - Sigma protocols and what properties define a "Zero-Knowledge proof". Stay tuned!  
 
